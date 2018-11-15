@@ -1,0 +1,18 @@
+How to deal with deadlocks? --> 3 Stratagies
+1)recovery Strategy:
+This strategy requires a process to run in the background which continuesly checks for the deadlock.
+This can be useless if there is no deadlock and can consume some CPU time.
+It can be unacceptable for the system that requires a good performance and don't have to wait
+for the deadlock detection and its fix, that can be crucial for the real-time system.
+In such cases, even recoveries are not possible sometimes.
+
+2)prevention Strategy:
+In this strategy, there is a possibilty of starvation.
+If we meet the "hold and wait" condition, we will not be able to fully use the resources of our system.
+Thus, we will lack its usage to full potential.
+
+3)avoidance Strategy:
+This strategy is actually impossible to implement due to the halting problem
+although it has a solution with the banker's algorithm.
+In case we avoid reaching the unsafe spot, we will not be able to fully use the resources of our system.
+Thus, we will lack its usage to full potential.
